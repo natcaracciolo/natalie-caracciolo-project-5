@@ -6,8 +6,8 @@ class Titles extends Component {
         return(
 
             <div>
-                <h1>Horoscope App</h1>
-                <p>Select your star sign below and get a horoscope!</p>
+                <h1>Horoscope</h1>
+                <p>Enter your astrological sign below and get a horoscope!</p>
             </div>
 
         );

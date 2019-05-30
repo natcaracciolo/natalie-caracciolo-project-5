@@ -17,7 +17,8 @@ class App extends Component {
       color: '',
       mood: '',
       description: '',
-      userInput: ''
+      userInput: '',
+      showResults: false
     }
   }
   // this method puts information in the state when the user types in their sign 
@@ -55,7 +56,10 @@ class App extends Component {
         color: response.data.color,
         mood: response.data.mood,
         description: response.data.description,
-        userInput: ''
+        userInput: '',
+
+        //when info comes back from api, then 
+        showResults: true
       })
     });
   }
@@ -71,15 +75,20 @@ class App extends Component {
             onClick={this.handleClick}
             userInput={this.state.userInput}
           /> 
-          <Results
-            date={this.state.date} 
-            compatibility={this.state.compatibility} 
-            luckynumber={this.state.luckynumber} 
+          {
+          this.state.showResults === true && <Results
+            date={this.state.date}
+            compatibility={this.state.compatibility}
+            luckynumber={this.state.luckynumber}
             color={this.state.color}
-            mood={this.state.mood}  
-            description={this.state.description} 
-      
+            mood={this.state.mood}
+            description={this.state.description}
+
           />
+          }
+
+
+        
       </div>
     );
   }

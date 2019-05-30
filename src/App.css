@@ -1,4 +1,14 @@
 .App {
   text-align: center;
+  color: white;
+}
+
+html {
+  background-color: #23223F;
+}
+
+h1 {
+  font-family: 'League Script';
+  font-size:100px;
 }
 

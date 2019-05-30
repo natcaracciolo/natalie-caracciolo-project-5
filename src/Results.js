@@ -1,19 +1,18 @@
-import React, {Component} from 'react';
+import React from 'react';
+
+const Results = (props) => {
+    return (
+        <div>
+            <p>date: {props.date}</p>
+            <p>{props.compatibility}</p>
+            <p>{props.luckynumber}</p>
+            <p>{props.color}</p>
+            <p>{props.mood}</p>
+            <p>{props.description}</p>
+        </div>
+    )
 
 
-class Results extends Component{
-    render(){
-        return(
-            <div>
-                <p>{this.props.date}</p>
-                <p>{this.props.compatibility}</p>
-                <p>{this.props.luckynumber}</p>
-                <p>{this.props.color}</p>
-                <p>{this.props.mood}</p>
-                <p>{this.props.description}</p>
-            </div>
-        )
-    }
 }
 
 
