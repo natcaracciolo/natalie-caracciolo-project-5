@@ -70,13 +70,15 @@ class App extends Component {
             onChange={this.handleChange}
             onClick={this.handleClick}
             userInput={this.state.userInput}
-          
           /> 
           <Results
+            compatibility={this.state.date_range} 
             compatibility={this.state.compatibility} 
+            compatibility={this.state.lucky_number} 
+            compatibility={this.state.color} 
+            compatibility={this.state.description} 
+            compatibility='<p>your current mood is</p>'{this.state.mood} 
           />
-
-
       </div>
     );
   }
