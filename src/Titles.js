@@ -6,7 +6,7 @@ class Titles extends Component {
         return(
 
             <div>
-                <h1>Horoscope</h1>
+                <h1>Daily Horoscope</h1>
                 <p>Enter your astrological sign below and get a horoscope!</p>
             </div>
 

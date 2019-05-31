@@ -5,10 +5,39 @@
 
 html {
   background-color: #23223F;
+  color: white;
 }
 
 h1 {
-  font-family: 'League Script';
+  font-family: 'League Script', sans-serif;
   font-size:100px;
+  color: #E0C3B5;
 }
+
+p {
+  font-family: 'josefin sans', sans-serif;
+  font-size: 20px;
+}
+
+
+
+/* input styles */
+
+#newSign {
+  background: #23223F;
+  border: none;
+  border-bottom: 1px solid white;
+  font-family: 'josefin sans', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+label,
+button {
+  font-family: 'josefin sans', sans-serif;
+  font-size: 20px;
+  
+}
+
+
 

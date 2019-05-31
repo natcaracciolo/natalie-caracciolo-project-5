@@ -9,7 +9,7 @@ class Aztro extends Component {
             <div>
                 <form action="submit">
 
-                    <label htmlFor="newSign">Enter Your Sign</label>
+                    <label htmlFor="newSign">Enter Your Sign:</label>
 
                     { /* Attatch handle change method*/}
                     <input type="text" id="newSign" onChange={this.props.onChange} value={this.props.userInput} />
