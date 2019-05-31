@@ -3,12 +3,12 @@ import React from 'react';
 const Results = (props) => {
     return (
         <div className='body'>
-            <p>Date Range: {props.date}</p>
-            <p>Compatibility: {props.compatibility}</p>
-            <p>Lucky Number: {props.luckynumber}</p>
-            <p>Lucky Color:{props.color}</p>
-            <p>Current Mood: {props.mood}</p>
-            <p>A Lil' Advice: {props.description}</p>
+            <p>date range: {props.date}</p>
+            <p>compatibility: {props.compatibility}</p>
+            <p>lucky number: {props.luckynumber}</p>
+            <p>lucky color: {props.color}</p>
+            <p>current mood: {props.mood}</p>
+            <p>a lil' advice: {props.description}</p>
         </div>
     )
 

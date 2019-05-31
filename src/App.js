@@ -4,8 +4,7 @@ import './App.css';
 import axios from 'axios';
 import Titles from './Titles.js';
 import Results from './Results.js';
-
-
+import Particles from 'react-particles-js';
 
 class App extends Component {
   constructor() {
@@ -18,7 +17,8 @@ class App extends Component {
       mood: '',
       description: '',
       userInput: '',
-      showResults: false
+      showResults: false,
+      error: false
     }
   }
   // this method puts information in the state when the user types in their sign 
@@ -61,21 +61,36 @@ class App extends Component {
         //when info comes back from api, then 
         showResults: true
       })
-    });
+    }).catch((error ) => {
+
+      this.setState({
+        error:true
+      })
+
+      
+    })
   }
 
   render() {
     return (
-      <div className="App">
-      
-          <Titles /> 
+      <div className="App wrapper">
+
+         <Titles /> 
 
           <Aztro 
             onChange={this.handleChange}
             onClick={this.handleClick}
             userInput={this.state.userInput}
           /> 
+
           {
+            this.state.error && true
+            
+            
+          }
+
+          {
+            
           this.state.showResults === true && <Results
             date={this.state.date}
             compatibility={this.state.compatibility}
@@ -86,6 +101,8 @@ class App extends Component {
 
           />
           }
+
+      
 
 
         
