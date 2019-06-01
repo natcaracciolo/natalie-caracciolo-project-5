@@ -87,14 +87,15 @@ class App extends Component {
                   "enable": true,
                   "value_area": 500
                 }
+
               },
               "line_linked": {
                 "enable": true,
                 "opacity": 0.03
               },
               "move": {
-                "direction": "right",
-                "speed": .2
+                "direction": "rotate",
+                "speed": .5
               },
               "size": {
                 "value": 1.5
