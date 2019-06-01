@@ -76,6 +76,8 @@ class App extends Component {
     return (
       <div className="App" id="particles">
 
+      
+
       <Particles 
           params={{
             "particles": {
@@ -83,25 +85,25 @@ class App extends Component {
                 "value": 60,
                 "density": {
                   "enable": true,
-                  "value_area": 1500
+                  "value_area": 500
                 }
               },
               "line_linked": {
                 "enable": true,
-                "opacity": 0.02
+                "opacity": 0.03
               },
               "move": {
                 "direction": "right",
-                "speed": 0.05
+                "speed": .2
               },
               "size": {
-                "value": 1
+                "value": 1.5
               },
               "opacity": {
                 "anim": {
                   "enable": true,
-                  "speed": 1,
-                  "opacity_min": 0.05
+                  "speed": 1.5,
+                  "opacity_min": 0.00
                 }
               }
             },
@@ -121,10 +123,9 @@ class App extends Component {
             "retina_detect": true
           }}
       
+    
       
-      
-      
-      />
+      /> 
 
          <Titles /> 
 

@@ -6,7 +6,7 @@
 }
 
 html {
-  background-color: #23223F;
+  background-color: #232741;
   color: white;
   
 }
@@ -17,7 +17,7 @@ html {
 }
 
 h1 {
-  font-family: 'League Script', sans-serif;
+  font-family: 'playfair display sc', sans-serif;
   font-size:100px;
   color: #E0C3B5;
 }
@@ -48,6 +48,7 @@ canvas {
   height: 100%;
   top: 0;
   left:0;
+  pointer-events: none;
 }
 
 
@@ -55,7 +56,7 @@ canvas {
 /* input styles */
 
 #newSign {
-  background: #23223F;
+  background: #232741;
   border: none;
   border-bottom: 1px solid white;
   font-family: 'josefin sans', sans-serif;
@@ -69,6 +70,7 @@ button {
   font-family: 'josefin sans', sans-serif;
   font-size: 20px;
   padding: 0 5px;
+  pointer-events: all;
   
 }
 
