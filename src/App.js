@@ -5,6 +5,7 @@ import axios from 'axios';
 import Titles from './Titles.js';
 import Results from './Results.js';
 import Particles from 'react-particles-js';
+import Alert from './Alert';
 
 
 class App extends Component {
@@ -19,7 +20,8 @@ class App extends Component {
       description: '',
       userInput: '',
       showResults: false,
-      error: false
+      error: false,
+      showAlert: false
     }
   }
   // this method puts information in the state when the user types in their sign 
@@ -28,11 +30,20 @@ class App extends Component {
       userInput: event.target.value
     })
   }
+
+
+  handleAlertChange = (e) => {
+    this.setState ({
+      showAlert: !(this.state.showAlert)
+    })
+  }
   //this method pulls information out of the state when the button is clicked 
   handleClick = (event) => {
     event.preventDefault();
-    console.log(this.state.userInput)
-
+    this.setState({
+      error:false
+    })
+   
     // axios API call 
     const URL = `https://aztro.sameerkumar.website`;
     axios({
@@ -76,7 +87,10 @@ class App extends Component {
     return (
       <div className="App" id="particles">
 
-      
+      <Alert
+        showAlert={this.state.showAlert}
+        closeAlert={this.handleAlertChange}
+      />
 
       <Particles 
           params={{
@@ -98,7 +112,7 @@ class App extends Component {
                 "speed": .5
               },
               "size": {
-                "value": 1.5
+                "value": 1.7
               },
               "opacity": {
                 "anim": {
@@ -128,7 +142,10 @@ class App extends Component {
       
       /> 
 
-         <Titles /> 
+         <Titles 
+            showAlert={this.handleAlertChange}
+          
+         /> 
 
           <Aztro 
             onChange={this.handleChange}
@@ -137,9 +154,7 @@ class App extends Component {
           /> 
 
           {
-            this.state.error && true
-            
-            
+            this.state.error ? <p>uh oh! looks like theres a spelling error. please make sure evrything is spelled correctly :)</p>: ''  
           }
 
           {

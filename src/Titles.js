@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Alert from 'sweetalert-react';
 
 
 class Titles extends Component {
@@ -8,7 +9,7 @@ class Titles extends Component {
             <div>
                 <h1>Daily Horoscope</h1>
                 <p>enter your astrological sign below to get some advice on your day! </p>
-                <p> not sure what your sign is? no problem. <a href="https://whatismysign.net/">click here </a>to find out. </p>
+                <p> not sure what your sign is? no problem. <button id='alert' onClick={this.props.showAlert}>click here </button>to find out. </p>
             </div>
 
             

@@ -1,8 +1,7 @@
 .App {
   text-align: center;
   color: white;
-  
-  
+ 
 }
 
 html {
@@ -22,7 +21,12 @@ h1 {
   color: #E0C3B5;
 }
 
-p {
+h2 {
+  text-align: center;
+}
+
+p,
+h2 {
   font-family: 'josefin sans', sans-serif;
   font-size: 20px;
 }
@@ -38,10 +42,13 @@ a {
   width: 55%;
   text-align: left;
   margin:0 auto;
+  background: #1f2237;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 40px;
 
 
 }
-
 canvas {
   position: absolute;
   width: 100%;
@@ -51,7 +58,11 @@ canvas {
   pointer-events: none;
 }
 
-
+.alert {
+  background: transparent;
+  color: #E0C3B5;
+  padding: 0;
+}
 
 /* input styles */
 
@@ -74,12 +85,36 @@ button {
   
 }
 
+
+
 button {
-  background-color: #E0C3B5;
+  background-color: #232741;
+  color: #E0C3B5;
   border: none;
-  margin: 0 5px;
-  padding: 5px;
-  border-radius: 50px;
+  margin: none;
+  padding: none;
+  border-radius: 10px;
+}
+
+/* sweet alert styles */
+
+.sa-error-container {
+    display: none;
+}
+
+.sweet-alert.showSweetAlert.visible  {
+  background-color: #1f2237;
+  padding: 17px;
+  width:26%;
+}
+
+fieldset {
+  display:none;
+}
+
+.confirm {
+  width: 20%;
+  margin: 0 auto; 
 }
 
 /* RESPONSIVE DESIGN  */
