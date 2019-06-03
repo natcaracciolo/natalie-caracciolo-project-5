@@ -76,6 +76,14 @@ canvas {
   margin-top: 50px;
 }
 
+#newSign:hover {
+ border: 0.5px solid #E0C3B5;
+}
+
+#newSign:active {
+  color: #E0C3B5;
+}
+
 label,
 button {
   font-family: 'josefin sans', sans-serif;
@@ -107,7 +115,17 @@ button {
   padding: 17px;
   width: 26%;
   border-radius: 20px;
+  width: 65%;
+  margin:0 auto;
+  position: relative;
+  text-align: center;
 
+}
+
+sweet-alert.showSweetAlert.visible  p {
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 fieldset {
@@ -116,13 +134,13 @@ fieldset {
 
 .confirm {
   width: 20%;
-  margin-left: 130px; 
   background-color: #E0C3B5; 
   color: black;
   
 }
 
 /* RESPONSIVE DESIGN  */
+
 
 @media (max-width: 944px) {
   h1 {
@@ -131,6 +149,10 @@ fieldset {
   p {
     font-size:18px;
   }
+  .sweet-alert.showSweetAlert.visible {
+    width: 70%;
+  }
+
 }
 
 @media (max-width: 808px) {
@@ -138,7 +160,10 @@ fieldset {
     font-size: 70px;
     text-align: center;
   }
- 
+  .sweet-alert.showSweetAlert.visible {
+    width: 80%;
+  }
+
 }
 
 @media (max-width: 621px) {
@@ -150,6 +175,10 @@ fieldset {
   button {
     margin-top:20px;
   }
+  .sweet-alert.showSweetAlert.visible {
+    width: 90%;
+  }
+
 }
 
 @media (max-width: 430px) {
