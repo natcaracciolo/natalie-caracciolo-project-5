@@ -61,7 +61,7 @@ canvas {
 .alert {
   background: transparent;
   color: #E0C3B5;
-  padding: 0;
+  padding:0;
 }
 
 /* input styles */
@@ -80,7 +80,7 @@ label,
 button {
   font-family: 'josefin sans', sans-serif;
   font-size: 20px;
-  padding: 0 10px;
+  padding: 0;
   pointer-events: all;
   
 }
@@ -92,7 +92,7 @@ button {
   color: #E0C3B5;
   border: none;
   margin: none;
-  padding: none;
+  padding: 0 6px 0 2px;
   border-radius: 10px;
 }
 
@@ -105,7 +105,9 @@ button {
 .sweet-alert.showSweetAlert.visible  {
   background-color: #1f2237;
   padding: 17px;
-  width:26%;
+  width: 26%;
+  border-radius: 20px;
+
 }
 
 fieldset {
@@ -114,7 +116,10 @@ fieldset {
 
 .confirm {
   width: 20%;
-  margin: 0 auto; 
+  margin-left: 130px; 
+  background-color: #E0C3B5; 
+  color: black;
+  
 }
 
 /* RESPONSIVE DESIGN  */

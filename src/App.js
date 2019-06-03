@@ -99,26 +99,26 @@ class App extends Component {
                 "value": 60,
                 "density": {
                   "enable": true,
-                  "value_area": 500
+                  "value_area": 600
                 }
 
               },
               "line_linked": {
                 "enable": true,
-                "opacity": 0.03
+                "opacity": 0.04
               },
               "move": {
                 "direction": "rotate",
                 "speed": .5
               },
               "size": {
-                "value": 1.7
+                "value": 1.9
               },
               "opacity": {
                 "anim": {
                   "enable": true,
                   "speed": 1.5,
-                  "opacity_min": 0.00
+                  "opacity_min": 0.06
                 }
               }
             },
@@ -131,7 +131,7 @@ class App extends Component {
               },
               "modes": {
                 "push": {
-                  "particles_nb": 1
+                  "particles_nb": 1.5
                 }
               }
             },
