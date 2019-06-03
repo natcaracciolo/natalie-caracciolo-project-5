@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/natalie-caracciolo-project-5/precache-manifest.994229dea4110763141f17f7c95308e5.js"
+  "/natalie-caracciolo-project-5/precache-manifest.6b2a16295ca3baacb5b6f64df6f90d89.js"
 );
 
 self.addEventListener('message', (event) => {
